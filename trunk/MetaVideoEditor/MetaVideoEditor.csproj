@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17F6DC8F-2713-4717-9B8D-37321B1FEBE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetaVideoEditor</RootNamespace>
+    <AssemblyName>MetaVideoEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>AA8E85F3AAC4F4871F3CBF9013A21B45F65283AA</ManifestCertificateThumbprint>
+    <ManifestKeyFile>AlloBrowser_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mveEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mveEngine\bin\Release\mveEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ActorPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ContextMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TrailerPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\QueuePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTimeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CrewMemberPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GeneralItemPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apropos.Designer.cs">
+      <DependentUpon>Apropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DoubleBufferPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DraggableTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Update\InstallApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update\InstallApp.Designer.cs">
+      <DependentUpon>InstallApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update\InstallPlugins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update\InstallPlugins.Designer.cs">
+      <DependentUpon>InstallPlugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ActorsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ActorsPanel.Designer.cs">
+      <DependentUpon>ActorsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AdjHeightTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\BackdropsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\BackdropsPanel.Designer.cs">
+      <DependentUpon>BackdropsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\BannersPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\BannersPanel.Designer.cs">
+      <DependentUpon>BannersPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\BasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TrailersPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TrailersPanel.Designer.cs">
+      <DependentUpon>TrailersPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CrewPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\CrewPanel.Designer.cs">
+      <DependentUpon>CrewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TagLinesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TagLinesPanel.Designer.cs">
+      <DependentUpon>TagLinesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CountriesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\CountriesPanel.Designer.cs">
+      <DependentUpon>CountriesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\StudiosPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\StudiosPanel.Designer.cs">
+      <DependentUpon>StudiosPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\GenresPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\GenresPanel.Designer.cs">
+      <DependentUpon>GenresPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PostersPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\PostersPanel.Designer.cs">
+      <DependentUpon>PostersPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\OverviewPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\OverviewPanel.Designer.cs">
+      <DependentUpon>OverviewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\GeneralPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\GeneralPanel.Designer.cs">
+      <DependentUpon>GeneralPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Apropos.resx">
+      <DependentUpon>Apropos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update\InstallApp.resx">
+      <DependentUpon>InstallApp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update\InstallPlugins.resx">
+      <DependentUpon>InstallPlugins.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ActorsPanel.resx">
+      <DependentUpon>ActorsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\BackdropsPanel.resx">
+      <DependentUpon>BackdropsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\BannersPanel.resx">
+      <DependentUpon>BannersPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TrailersPanel.resx">
+      <DependentUpon>TrailersPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\CrewPanel.resx">
+      <DependentUpon>CrewPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TagLinesPanel.resx">
+      <DependentUpon>TagLinesPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\CountriesPanel.resx">
+      <DependentUpon>CountriesPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\StudiosPanel.resx">
+      <DependentUpon>StudiosPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\GenresPanel.resx">
+      <DependentUpon>GenresPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PostersPanel.resx">
+      <DependentUpon>PostersPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\OverviewPanel.resx">
+      <DependentUpon>OverviewPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\GeneralPanel.resx">
+      <DependentUpon>GeneralPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingsForm\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardBase\ConfigWizard.resx">
+      <DependentUpon>ConfigWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ribbon\RibbonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\LayoutUtils.cs" />
+    <Compile Include="Ribbon\RibbonButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\Tab.cs" />
+    <Compile Include="Ribbon\TabPageSwitcher.cs" />
+    <Compile Include="Ribbon\TabPageSwitcherDesigner.cs" />
+    <Compile Include="Ribbon\TabPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\TabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon\TabStripPage.cs" />
+    <Compile Include="Ribbon\TabStripProfessionalRenderer.cs" />
+    <Compile Include="Ribbon\TabStripSystemRenderer.cs" />
+    <Compile Include="Ribbon\TabStripToolboxItem.cs" />
+    <Compile Include="Ribbon\TabToolboxItem.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm\LayoutUtils.cs" />
+    <Compile Include="SettingsForm\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm\Tab.cs" />
+    <Compile Include="SettingsForm\TabPageSwitcher.cs" />
+    <Compile Include="SettingsForm\TabPageSwitcherDesigner.cs" />
+    <Compile Include="SettingsForm\TabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SettingsForm\PanelPage.cs" />
+    <Compile Include="SettingsForm\TabStripToolboxItem.cs" />
+    <Compile Include="SplashScreen.cs">
+    </Compile>
+    <Compile Include="Update\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardBase\Collection\GenericCollection.cs" />
+    <Compile Include="WizardBase\Collection\WizardStepCollectionEditor.cs" />
+    <Compile Include="WizardBase\Converters\CustomFileNameEditor.cs" />
+    <Compile Include="WizardBase\Converters\GenericCollectionConverter.cs" />
+    <Compile Include="WizardBase\Converters\GenericConverter.cs" />
+    <Compile Include="WizardBase\Converters\PDesc.cs" />
+    <Compile Include="WizardBase\Designers\WizardDesigner.cs" />
+    <Compile Include="WizardBase\Designers\WizardDesignerActionList.cs" />
+    <Compile Include="WizardBase\Designers\WizardStepDesigner.cs" />
+    <Compile Include="WizardBase\EventArgs\GenericCancelEventArgs.cs" />
+    <Compile Include="WizardBase\EventArgs\GenericChangeEventArgs.cs" />
+    <Compile Include="WizardBase\EventArgs\GenericEventArgs.cs" />
+    <Compile Include="WizardBase\Steps\FinishStep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WizardBase\Steps\IntermediateStep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WizardBase\Steps\LicenceStep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WizardBase\Steps\StartStep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WizardBase\Steps\WizardControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WizardBase\Steps\WizardStep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WizardBase\Structures\ColorPair.cs" />
+    <Compile Include="WizardBase\Structures\TextAppearence.cs" />
+    <Compile Include="WizardBase\ConfigWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizardBase\ConfigWizard.Designer.cs">
+      <DependentUpon>ConfigWizard.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\apropos.png" />
+    <Content Include="Images\autosearch.gif" />
+    <Content Include="Images\BackgroundDefault.png" />
+    <Content Include="Images\busy.gif" />
+    <Content Include="Images\B_click1.png" />
+    <Content Include="Images\B_click2.png" />
+    <Content Include="Images\B_on1.png" />
+    <Content Include="Images\B_on2.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\checkbox.gif" />
+    <Content Include="Images\checkbox_checked.gif" />
+    <Content Include="Images\colors.gif" />
+    <Content Include="Images\Config.png" />
+    <Content Include="Images\default-movie.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\down.png" />
+    <Content Include="Images\download.gif" />
+    <Content Include="Images\down_triangle.gif" />
+    <Content Include="Images\drag-cursor.png" />
+    <Content Include="Images\edit.jpg" />
+    <Content Include="Images\edit_tans.png" />
+    <Content Include="Images\folder.gif" />
+    <Content Include="Images\half-star.gif" />
+    <Content Include="Images\help.gif" />
+    <Content Include="Images\icon-minus.gif" />
+    <Content Include="Images\icon-plus.gif" />
+    <Content Include="Images\MissingPerson.jpg" />
+    <Content Include="Images\mve.png" />
+    <Content Include="Images\play.gif" />
+    <Content Include="Images\rating_star.empty.gif" />
+    <Content Include="Images\red_button.gif" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\search2.png" />
+    <Content Include="Images\settings.png" />
+    <Content Include="Images\star.gif" />
+    <Content Include="Images\Star_Empty.png" />
+    <Content Include="Images\Star_Full.png" />
+    <Content Include="Images\Star_Half.png" />
+    <Content Include="Images\UnWatched.png" />
+    <Content Include="Images\up.png" />
+    <Content Include="Images\valid.jpg" />
+    <Content Include="Images\Watched.png" />
+    <Content Include="Localization\strings-fr.xml" />
+    <Content Include="WizardBase\Resources\wizard_back.png" />
+    <Content Include="WizardBase\Resources\wizard_icon.png" />
+    <Content Include="WizardBase\Resources\wizard_left.png" />
+    <Content Include="WizardBase\Resources\wizard_Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
