@@ -1,0 +1,208 @@
+<Settings>
+  <Version>1.0000</Version>
+  <HomeMW>Accueil</HomeMW>
+  <SettingsMW>Options</SettingsMW>
+  <ThemeMW>Thème</ThemeMW>
+  <AboutMW>A propos</AboutMW>
+  <SearchMW>Rechercher</SearchMW>
+  <AutoMW>Auto</AutoMW>
+  <RestoreMW>Rétablir</RestoreMW>
+  <SaveMW>Enregistrer</SaveMW>
+  <SelectedItemMW>L'élément sélectionné</SelectedItemMW>
+  <CheckedItemsMW>Les éléments cochés</CheckedItemsMW>
+  <ModifiedItemsMW>Tous les éléments modifiés</ModifiedItemsMW>
+  <RebuildMW>Reconstruire</RebuildMW>
+  <SettingsDisplayMW>Options &amp; Affichage</SettingsDisplayMW>
+  <MediaCollectionMW>Bibliothèque</MediaCollectionMW>
+  <AzurTheme>Azur</AzurTheme>
+  <MetalTheme>Métal</MetalTheme>
+  <DarkTheme>Sombre</DarkTheme>
+  <NatureTheme>Nature</NatureTheme>
+  <DawnTheme>Aurore</DawnTheme>
+  <CornTheme>Blé</CornTheme>
+  <ChocolateTheme>Chocolat</ChocolateTheme>
+  <NavyTheme>Marine</NavyTheme>
+  <IceTheme>Glace</IceTheme>
+  <VanillaTheme>Vanille</VanillaTheme>
+  <CanelaTheme>Cannelle</CanelaTheme>
+  <CakeTheme>Gâteau</CakeTheme>
+  <TitleOvTab>Aperçu</TitleOvTab>
+  <TitleGeTab>Général</TitleGeTab>
+  <TitleActTab>Acteurs</TitleActTab>
+  <TitleCreTab>Equipe</TitleCreTab>
+  <TitleTraTab>Bandes annonces</TitleTraTab>
+  <TitlePoTab>Jaquettes</TitlePoTab>
+  <TitleBdTab>Backdrops</TitleBdTab>
+  <TitleBaTab>Bannières</TitleBaTab>
+  <TitleGenTab>Genres</TitleGenTab>
+  <TitleStTab>Studios</TitleStTab>
+  <TitleCoTab>Pays</TitleCoTab>
+  <TitleTagTab>Accroches</TitleTagTab>
+  <InitializeComponentsSS>Initialise les composants</InitializeComponentsSS>
+  <LoadingCacheSS>Chargement du cache</LoadingCacheSS>
+  <RefreshLibraryAsync>Actualisation de la bibliothèque</RefreshLibraryAsync>
+  <CheckUpdatesAsync>Recherche de mises à jour</CheckUpdatesAsync>
+  <AvailableUpdateMW>{0} mise à jour disponible</AvailableUpdateMW>
+  <AvailableUpdatesMW>{0} mises à jour disponibles</AvailableUpdatesMW>
+  <CloseConfirmMess>
+    Des opérations sont actuellement en cours d'éxécution.
+    Voullez-vous vraiment quitter le programme ?
+  </CloseConfirmMess>
+  <NoActionMW>Aucune opération en cours</NoActionMW>
+  <ActionMW>{0} opération en cours</ActionMW>
+  <ActionsMW>{0} opérations en cours</ActionsMW>
+  <OpenMW>Ouvrir</OpenMW>
+  <DeleteMW>Supprimer</DeleteMW>
+  <NoSelectedItemMess>Aucun élément sélectionné !</NoSelectedItemMess>
+  <PathExistMess>Le chemin {0} n'existe pas !</PathExistMess>
+  <NoCheckedItemMess>Aucun élément coché !</NoCheckedItemMess>
+  <NoModifiedItemMess>Aucun élément modifié !</NoModifiedItemMess>
+  <NoResultMess>Aucun résultat trouvé.</NoResultMess>
+  <SelectItemsMess>Veuillez sélectionner un ou plusieurs éléments</SelectItemsMess>
+  <DeleteCacheMess>
+    Ceci supprimera le cache.
+    Voulez-vous vraiment continuer ?
+  </DeleteCacheMess>
+  <SearchSW>Rechercher</SearchSW>
+  <ResultsSW>Résultats</ResultsSW>
+  <NoResultW>Aucun résultat</NoResultW>
+  <ProvidedBy>Fournit par</ProvidedBy>
+  <EditNameActTab>Editer le nom</EditNameActTab>
+  <EditRoleActTab>Editer le rôle</EditRoleActTab>
+  <ChangeImageActTab>Changer l'image</ChangeImageActTab>
+  <DownloadAsync>Télécharge</DownloadAsync>
+  <EditActivityCreTab>Editer l'activité</EditActivityCreTab>
+  <LoadingPoTab>Chargement</LoadingPoTab>
+  <NoImagePoTab>Aucune image</NoImagePoTab>
+  <CheckPoTab>Cocher</CheckPoTab>
+  <UnCheckPoTab>Décocher</UnCheckPoTab>
+  <CurrentActionsMW>Opérations en cours ou en attente</CurrentActionsMW>
+  <EditMW>Editer</EditMW>
+  <PlayTraTab>Lire</PlayTraTab>
+  <DownloadTraTab>Télécharger</DownloadTraTab>
+  <rebuildMW>Rebuild</rebuildMW>
+  <AddActorActTab>Double-clickez ici pour ajouter un acteur</AddActorActTab>
+  <AddCountryCoTab>Double-clickez ici pour ajouter un pays</AddCountryCoTab>
+  <AddCrewMemberCreTab>Double-clickez ici pour ajouter un membre de l'équipe</AddCrewMemberCreTab>
+  <NoGenreGenTab>Aucun genre</NoGenreGenTab>
+  <AddGenreGenTab>Double-clickez ici pour ajouter un genre</AddGenreGenTab>
+  <NoStudioStTab>Aucun studio</NoStudioStTab>
+  <AddStudioStTab>Double-clickez ici pour ajouter un studio</AddStudioStTab>
+  <NoTaglineTagTab>Aucune accroche</NoTaglineTagTab>
+  <AddTaglineTagTab>Double-clickez ici pour ajouter une accroche</AddTaglineTagTab>
+  <NoCountryCoTab>Aucun pays</NoCountryCoTab>
+  <NoTrailerTraTab>Aucune bande annonce</NoTrailerTraTab>
+  <AddTrailerTraTab>Double-clickez ici pour ajouter une bande annonce</AddTrailerTraTab>
+  <NoBannerBaTab>Aucune bannière</NoBannerBaTab>
+  <AddBannerBaTab>Double-clickez ou glissez un fichier ici pour ajouter une bannière</AddBannerBaTab>
+  <TitleStr>Titre</TitleStr>
+  <OriginalTitleStr>Titre Original</OriginalTitleStr>
+  <SortTitleStr>Titre Trié</SortTitleStr>
+  <PosterStr>Jaquettes</PosterStr>
+  <BackdropStr>Backdrops</BackdropStr>
+  <TrailersStr>Bandes annonces</TrailersStr>
+  <YearStr>Année</YearStr>
+  <RuntimeStr>Durée</RuntimeStr>
+  <RatingStr>Note</RatingStr>
+  <MpaaStr>Indicateur MPAA</MpaaStr>
+  <OverviewStr>Résumé</OverviewStr>
+  <RatioStr>Ratio Image</RatioStr>
+  <CastingStr>Casting</CastingStr>
+  <GenresStr>Genres</GenresStr>
+  <StudiosStr>Studios</StudiosStr>
+  <CountriesStr>Pays</CountriesStr>
+  <TaglinesStr>Accroches</TaglinesStr>
+  <MediaTypeStr>Type de Media</MediaTypeStr>
+  <SeriesStr>Série</SeriesStr>
+  <SeasonStr>Saison</SeasonStr>
+  <EpisodeStr>Episode</EpisodeStr>
+  <DateAddedStr>Date d'ajout</DateAddedStr>
+  <YesStr>Oui</YesStr>
+  <NoStr>Non</NoStr>
+  <WatchedStr>Vu</WatchedStr>
+  <RateConvert>{0} sur 10</RateConvert>
+  <OKStr>OK</OKStr>
+  <CancelStr>Annuler</CancelStr>
+  <MoviesStr>Films</MoviesStr>
+  <VersionStr>Version</VersionStr>
+  <FoldersSet>Dossiers</FoldersSet>
+  <GeneralSet>Général</GeneralSet>
+  <DisplaySet>Affichage</DisplaySet>
+  <RenamingSet>Renommage</RenamingSet>
+  <LocalSet>Local</LocalSet>
+  <ProvidersSet>Fournisseurs</ProvidersSet>
+  <SaversSet>Enregistreurs</SaversSet>
+  <PluginsSet>Plugins</PluginsSet>
+  <AnalyzedFoldersSet>Dossiers analysés</AnalyzedFoldersSet>
+  <GeneralSettingsSet>Paramètres généraux</GeneralSettingsSet>
+  <DisplaySettingsSet>Paramètres d'affichage</DisplaySettingsSet>
+  <RenameItemsSet>Renommer les éléments</RenameItemsSet>
+  <LocalPluginsSet>Lecteurs de données locaux</LocalPluginsSet>
+  <ProvidersPluginsSet>Fournisseurs de données</ProvidersPluginsSet>
+  <SaversPluginsSet>Enregistreurs de données</SaversPluginsSet>
+  <AddRemovePluginsSet>Ajouter ou supprimer des Plugins</AddRemovePluginsSet>
+  <AddSet>Ajouter</AddSet>
+  <RemoveSet>Supprimer</RemoveSet>
+  <MBFoldersSet>Dossiers MediaBrowser</MBFoldersSet>
+  <DebugSet>Debuggage</DebugSet>
+  <ActDebugSet>Activer le log</ActDebugSet>
+  <DataSet>Données</DataSet>
+  <AddMissingDataSet>Ajouter uniquement les informations manquantes</AddMissingDataSet>
+  <ExtensionsSet>Extensions</ExtensionsSet>
+  <VidExtSet>Extensions vidéos :</VidExtSet>
+  <BdWidthSet>Largeur minimum des backdrops (pixel)</BdWidthSet>
+  <BDToSaveSet>Nombre de backdrops à télécharger</BDToSaveSet>
+  <BackgroundImgSet>Fond d'écran du panneau de détails :</BackgroundImgSet>
+  <SaveGeomSet>Mémoriser la géométrie de la fenêtre</SaveGeomSet>
+  <TreeColorsSet>Couleurs de l'arborescence</TreeColorsSet>
+  <UserColorsSet>Utiliser les couleurs dans l'arborescence</UserColorsSet>
+  <RedColorSet>Rouge : Eléments avec très peu de données</RedColorSet>
+  <BlueColorSet>Bleu : Eléments intermédiaires</BlueColorSet>
+  <BlackColorSet>Noir : Eléments avec beaucoup de données</BlackColorSet>
+  <BoldColorSet>Gras : Eléments modifiés</BoldColorSet>
+  <RenameMoviesSet>Renommer les films</RenameMoviesSet>
+  <RenameSeriesSet>Renommer les séries</RenameSeriesSet>
+  <RenameSeasonSet>Renommer les saisons</RenameSeasonSet>
+  <RenameEpisodeSet>Renommer les épidoes</RenameEpisodeSet>
+  <PatternSet>Structure :</PatternSet>
+  <SeriesNameSet>Nom de la série</SeriesNameSet>
+  <SeasonNumSet>Numéro saison</SeasonNumSet>
+  <EpisodeNum>Numéro épisode</EpisodeNum>
+  <TypeSet>Type</TypeSet>
+  <DescSet>Description</DescSet>
+  <AvailablePluginsSet>Plugins disponibles</AvailablePluginsSet>
+  <InstalledPluginsSet>Plugins installés</InstalledPluginsSet>
+  <ValuesSet>Valeurs clés</ValuesSet>
+  <SelectFolderMess>Veuillez indiquer au moins un dossier</SelectFolderMess>
+  <FolderModMess>
+    La liste des dossiers a été modifiée.
+    Les modifications non enregistrées seront perdues.
+    Voulez-vous continuer ?
+  </FolderModMess>
+  <PlugInstMess>Ce plugin est déjà installé</PlugInstMess>
+  <RemovePlugMess>Voulez-vous vraiment supprimer ce plugin ?</RemovePlugMess>
+  <BannersStr>Bannières</BannersStr>
+  <AllSet>Illimité (déconseillé)</AllSet>
+  <UpdatesUp>Mises à jour</UpdatesUp>
+  <UpdateUp>Mettre à jour</UpdateUp>
+  <DownloadUp>Téléchargement des mises à jour</DownloadUp>
+  <PluginInstallUp>Installation de plugins</PluginInstallUp>
+  <TitleWiz>Assistant de configuration</TitleWiz>
+  <NextWiz>Suivant</NextWiz>
+  <BackWiz>Précédent</BackWiz>
+  <FinishWiz>Terminer</FinishWiz>
+  <WelcomeWiz>Bienvenue sur MetaVideoEditor</WelcomeWiz>
+  <WelcSubWiz>Cet assistant va vous aider à configurer MetaVideoEditor pour la première fois</WelcSubWiz>
+  <MCSoftWiz>Logiciel Media Center</MCSoftWiz>
+  <MCSoftQuestionWiz>Quel logiciel Media Center utilisez-vous ?</MCSoftQuestionWiz>
+  <DVDlibWiz>Filmothèque Windows Media Center</DVDlibWiz>
+  <FoldersConfWiz>Configuration des dossiers</FoldersConfWiz>
+  <FoldersQuestionWiz>Dans quel(s) dossier(s) vos vidéos sont elle stockées ?</FoldersQuestionWiz>
+  <ProvidersWiz>Fournisseurs de données</ProvidersWiz>
+  <ProvQuestionWiz>Quels fournisseurs de données souhaitez-vous utiliser ?</ProvQuestionWiz>
+  <QuitWiz>Voulez-vous vraiment quitter l'assistant de configuration ?</QuitWiz>
+  <CurrentVersionAb>Version actuelle :</CurrentVersionAb>
+  <DownloadAb>Télécharger :</DownloadAb>
+  <FrSupportAb>Aide et support :</FrSupportAb>
+  <PluginOptionsSet>Options du plugin</PluginOptionsSet>
+</Settings>
