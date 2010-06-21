@@ -6,7 +6,7 @@
     <Filename>MetaVideoEditor.msi</Filename>
   </Application>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>MediaBrowser Reader</Name>
     <Description>Récupère les backdrops et les infos gérées par MediaBrowser</Description>
@@ -14,7 +14,7 @@
     <Type>Local</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>Folder.jpg Reader</Name>
     <Description>Lit les fichiers folder.jpg et folder.png</Description>
@@ -22,7 +22,7 @@
     <Type>Local</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>XBMC Reader</Name>
     <Description>Récupère les infos gérées par XBMC</Description>
@@ -30,7 +30,7 @@
     <Type>Local</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>Ciné-Passion</Name>
     <Description>Récupère les données de la base Ciné-Passion</Description>
@@ -38,7 +38,7 @@
     <Type>Provider</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>themoviedb</Name>
     <Description>Récupère les données de la base themoviedb.org</Description>
@@ -46,7 +46,7 @@
     <Type>Provider</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>AlloCine</Name>
     <Description>Récupère les données de la base AlloCine</Description>
@@ -54,7 +54,7 @@
     <Type>Provider</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>TheTVDB</Name>
     <Description>Récupère les données de la base thetvdb.com</Description>
@@ -62,7 +62,7 @@
     <Type>Provider</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>Mtn Extractor</Name>
     <Description>Extrait des vignettes à partir des fichiers vidéos</Description>
@@ -70,7 +70,7 @@
     <Type>Local</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>MediaBrowser Saver</Name>
     <Description>Enregistre les backdrops et les infos gérées par MediaBrowser</Description>
@@ -78,7 +78,7 @@
     <Type>Saver</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>XBMC Saver</Name>
     <Description>Enregistre les infos gérées par XBMC</Description>
@@ -86,7 +86,7 @@
     <Type>Saver</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>Folder.jpg Saver</Name>
     <Description>Enregistre les fichiers folder.jpg</Description>
@@ -94,7 +94,7 @@
     <Type>Saver</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>DvD-ID</Name>
     <Description>Enregistre les infos compatibles avec la filmothèque Media Center</Description>

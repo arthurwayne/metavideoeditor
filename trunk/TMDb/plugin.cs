@@ -49,7 +49,7 @@ namespace TMDb
 
         public override Version Version
         {
-            get { return new Version(1, 0, 0); }
+            get { return new Version(1, 0, 1); }
         }
 
         public override Version RequiredMVEVersion
