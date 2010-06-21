@@ -12,7 +12,7 @@ namespace mveEngine
     [Serializable]
     public class BaseStrings
     {
-        const string VERSION = "1.0000";
+        const string VERSION = "1.0001";
         const string ENFILE = "strings-en.xml";
 
         public string Version = VERSION; //this is used to see if we have changed and need to re-save
@@ -176,6 +176,7 @@ namespace mveEngine
         public string NoStr = "No";
         public string OKStr = "OK";
         public string CancelStr = "Cancel";
+        public string ResetStr = "Reset";
         public string VersionStr = "Version";        
 
         public string RateConvert = "{0} on 10";

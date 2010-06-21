@@ -146,6 +146,11 @@ namespace MetaVideoEditor
             UpdateFolderList();
         }
 
+        private void FolderList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DeleteButton.Enabled = true;
+        }
+
         
 
         

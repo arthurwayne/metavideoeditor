@@ -1239,6 +1239,7 @@
             this.tabPageSwitcher1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabPageSwitcher1.Controls.Add(this.panelPage1);
             this.tabPageSwitcher1.Controls.Add(this.panelPage5);
             this.tabPageSwitcher1.Controls.Add(this.panelPage9);
             this.tabPageSwitcher1.Controls.Add(this.PanelPage4);
@@ -1246,11 +1247,10 @@
             this.tabPageSwitcher1.Controls.Add(this.panelPage8);
             this.tabPageSwitcher1.Controls.Add(this.panelPage3);
             this.tabPageSwitcher1.Controls.Add(this.panelPage2);
-            this.tabPageSwitcher1.Controls.Add(this.panelPage1);
             this.tabPageSwitcher1.Controls.Add(this.panelPage6);
             this.tabPageSwitcher1.Location = new System.Drawing.Point(180, 12);
             this.tabPageSwitcher1.Name = "tabPageSwitcher1";
-            this.tabPageSwitcher1.SelectedPanelPage = this.panelPage5;
+            this.tabPageSwitcher1.SelectedPanelPage = this.panelPage1;
             this.tabPageSwitcher1.Size = new System.Drawing.Size(719, 535);
             this.tabPageSwitcher1.TabIndex = 1;
             this.tabPageSwitcher1.TabStrip = this.tabStrip1;
