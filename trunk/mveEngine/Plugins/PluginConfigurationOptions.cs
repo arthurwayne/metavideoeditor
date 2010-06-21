@@ -270,9 +270,9 @@ namespace mveEngine
         StackPanel BuildButtonPanel(Window window)
         {
             StackPanel panel = new StackPanel() { Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Right, Height = 40 };
-            Button ok = new Button() { HorizontalAlignment = HorizontalAlignment.Right, Margin = new Thickness(5, 10, 5, 0), Content = "OK", Height = 25, Width = 60, IsDefault = true };
-            Button reset = new Button() { HorizontalAlignment = HorizontalAlignment.Right, Margin = new Thickness(5, 10, 5, 0), Content = "Réinitialiser", Height = 25, Width = 70 };
-            Button cancel = new Button() { IsCancel = true, HorizontalAlignment = HorizontalAlignment.Right, Margin = new Thickness(5, 10, 0, 0), Content = "Annuler", Height = 25, Width = 60 };
+            Button ok = new Button() { HorizontalAlignment = HorizontalAlignment.Right, Margin = new Thickness(5, 10, 5, 0), Content = Kernel.Instance.GetString("OKStr"), Height = 25, Width = 60, IsDefault = true };
+            Button reset = new Button() { HorizontalAlignment = HorizontalAlignment.Right, Margin = new Thickness(5, 10, 5, 0), Content = Kernel.Instance.GetString("ResetStr"), Height = 25, Width = 70 };
+            Button cancel = new Button() { IsCancel = true, HorizontalAlignment = HorizontalAlignment.Right, Margin = new Thickness(5, 10, 0, 0), Content = Kernel.Instance.GetString("CancelStr"), Height = 25, Width = 60 };
 
             // capture
             var w = window;

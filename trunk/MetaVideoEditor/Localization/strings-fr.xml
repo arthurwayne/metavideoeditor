@@ -1,5 +1,5 @@
 <Settings>
-  <Version>1.0000</Version>
+  <Version>1.0001</Version>
   <HomeMW>Accueil</HomeMW>
   <SettingsMW>Options</SettingsMW>
   <ThemeMW>Thème</ThemeMW>
@@ -205,4 +205,5 @@
   <DownloadAb>Télécharger :</DownloadAb>
   <FrSupportAb>Aide et support :</FrSupportAb>
   <PluginOptionsSet>Options du plugin</PluginOptionsSet>
+  <ResetStr>Réinitialiser</ResetStr>
 </Settings>
