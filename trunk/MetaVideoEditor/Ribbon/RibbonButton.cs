@@ -289,7 +289,8 @@ namespace RibbonStyle
             //Close the info form
             if (info != null)
             {
-                info.Close();
+                info.Close(); 
+                info.Dispose();
             }
             timer2.Stop();
             base.OnMouseLeave(e);

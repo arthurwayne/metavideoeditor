@@ -89,6 +89,9 @@
     <Compile Include="Controls\ComboBoxControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\TrailerPanel.cs">
       <SubType>Component</SubType>
     </Compile>
