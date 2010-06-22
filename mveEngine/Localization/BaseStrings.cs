@@ -12,7 +12,7 @@ namespace mveEngine
     [Serializable]
     public class BaseStrings
     {
-        const string VERSION = "1.0001";
+        const string VERSION = "1.0002";
         const string ENFILE = "strings-en.xml";
 
         public string Version = VERSION; //this is used to see if we have changed and need to re-save
@@ -237,6 +237,7 @@ namespace mveEngine
         public string InstalledPluginsSet = "Installed plugins";
         public string AllSet = "All (not recommended)";
         public string PluginOptionsSet = "Plugin options";
+        public string SelectFolderSet = "Please select a folder";
 
         //Updates
         public string UpdatesUp = "Updates";

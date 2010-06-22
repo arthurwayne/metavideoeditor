@@ -244,11 +244,13 @@ namespace MetaVideoEditor
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog fb = new FolderBrowserDialog();
-            DialogResult res = fb.ShowDialog();
+            FolderBrowserDialogEx fbd = new FolderBrowserDialogEx();
+            fbd.ShowEditBox = true;
+            fbd.Description = Kernel.Instance.GetString("SelectFolderSet");
+            DialogResult res = fbd.ShowDialog();
             if (res == DialogResult.OK)
             {
-                Folders.Add(fb.SelectedPath);
+                Folders.Add(fbd.SelectedPath);
                 UpdateFolderList();
             }
         }
