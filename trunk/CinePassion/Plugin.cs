@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
+using System.Web;
 using System.Globalization;
 using mveEngine;
 
@@ -48,7 +49,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 1); }
+            get { return new Version(1, 0, 2); }
         }
 
         public override Version RequiredMVEVersion
@@ -144,7 +145,7 @@ namespace CinePassion
 
         public override List<Item> FindPossible(Item item)
         {
-            XmlDocument doc = Helper.Fetch(string.Format(Search, XbmcKey, HtmlUtil.UrlEncode(item.Title)));
+            XmlDocument doc = Helper.Fetch(string.Format(Search, XbmcKey, HttpUtility.UrlEncode(item.Title)));
 
             List<Item> filmsList = new List<Item>();
             if (doc == null) return filmsList;
@@ -425,9 +426,10 @@ namespace CinePassion
         private static string CleanAllocineTitle(string title)
         {
             if (string.IsNullOrEmpty(title)) return string.Empty;
-            if (title.ToLower().EndsWith("(tv)")) return title.Substring(0, title.Length - 4).Trim();
-            if (title.ToLower().EndsWith("(v)")) return title.Substring(0, title.Length - 3).Trim();
-            return title;
+            string res = title;
+            if (title.ToLower().EndsWith("(tv)")) res = title.Substring(0, title.Length - 4).Trim();
+            if (title.ToLower().EndsWith("(v)")) res = title.Substring(0, title.Length - 3).Trim();
+            return HttpUtility.HtmlDecode(res);
         }
 
     }
