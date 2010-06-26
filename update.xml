@@ -30,7 +30,7 @@
     <Type>Local</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>Ciné-Passion</Name>
     <Description>Récupère les données de la base Ciné-Passion</Description>

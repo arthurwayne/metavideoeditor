@@ -79,8 +79,8 @@ namespace mveEngine
                     List<Item> items = null;
                     try { items = p.FindPossible(item); }
                     catch (Exception ex) { Logger.ReportException("Error finding results for item  " + item.Title + " with provider " + p.Name, ex); continue; }
-                    
-                    Results.AddRange(items);
+                    if (items != null)
+                        Results.AddRange(items);
                 }
             }
             return Results;
