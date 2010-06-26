@@ -354,9 +354,10 @@ namespace CustomControls
                 {
                     imgStateLabel.Visible = true;
                     imgStateLabel.Text = Kernel.Instance.GetString("LoadingPoTab") + "...";
-                    picBox.BackgroundImage = null;
+                    picBox.BackgroundImage = MainImage = null;
+                    sizeText = "";
                     Async.Queue(Kernel.Instance.GetString("DownloadAsync") + " " + _imgPoster.Image, () =>
-                    {                        
+                    {
                         imgPath = ImageUtil.GetLocalImagePath(_imgPoster.Image);
                         if (!string.IsNullOrEmpty(imgPath))
                         {
@@ -368,6 +369,10 @@ namespace CustomControls
                                 sizeText = string.Format("{0}x{1}", MainImage.Width, MainImage.Height);
                         }
                     }, DisplayImage);
+                }
+                else
+                {
+                    picBox.BackgroundImage = null;
                 }
 
                 IsChecked = _imgPoster.Checked;
