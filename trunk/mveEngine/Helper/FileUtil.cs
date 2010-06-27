@@ -300,6 +300,8 @@ namespace mveEngine
             else name = name.Replace("%e", "");
 
             foreach (char lDisallowed in Path.GetInvalidFileNameChars()) name = name.Replace(lDisallowed.ToString(), "");
+            if (Config.RemoveAccents)
+                name = System.Text.Encoding.ASCII.GetString(System.Text.Encoding.GetEncoding(1251).GetBytes(name));
 
             if (Directory.Exists(item.Path))
             {

@@ -1,5 +1,5 @@
 <Settings>
-  <Version>1.0001</Version>
+  <Version>1.0003</Version>
   <HomeMW>Accueil</HomeMW>
   <SettingsMW>Options</SettingsMW>
   <ThemeMW>Thème</ThemeMW>
@@ -207,4 +207,5 @@
   <PluginOptionsSet>Options du plugin</PluginOptionsSet>
   <ResetStr>Réinitialiser</ResetStr>
   <SelectFolderSet>Veuillez choisir un dossier</SelectFolderSet>
+  <RemoveAccents>Supprimer les accents</RemoveAccents>
 </Settings>

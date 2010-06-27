@@ -178,6 +178,12 @@ namespace mveEngine
             set { if (this.data.TrailerPath != value) { this.data.TrailerPath = value; Save(); } }
         }
 
+        public bool RemoveAccents
+        {
+            get { return this.data.RemoveAccents; }
+            set { if (this.data.RemoveAccents != value) { this.data.RemoveAccents = value; Save(); } }
+        }
+
         #endregion
 
         private static Config _instance = new Config();

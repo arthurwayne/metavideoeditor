@@ -12,7 +12,7 @@ namespace mveEngine
     [Serializable]
     public class BaseStrings
     {
-        const string VERSION = "1.0002";
+        const string VERSION = "1.0003";
         const string ENFILE = "strings-en.xml";
 
         public string Version = VERSION; //this is used to see if we have changed and need to re-save
@@ -226,6 +226,7 @@ namespace mveEngine
         public string RenameSeriesSet = "Enable series renaming";
         public string RenameSeasonSet = "Enable seasons renaming";
         public string RenameEpisodeSet = "Enable episode renaming";
+        public string RemoveAccents = "Remove accents from characters";
         public string PatternSet = "Patern";
         public string ValuesSet = "Values";
         public string SeriesNameSet = "Series name";

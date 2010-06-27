@@ -38,6 +38,7 @@ namespace mveEngine
         public string ColorTheme = "Azur";
         public bool UseTreeColor = true;
         public string TrailerPath = Path.Combine(ApplicationPaths.AppConfigPath, "Trailers");
+        public bool RemoveAccents = false;
 
         // for the serializer
         public ConfigData()

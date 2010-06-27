@@ -86,6 +86,7 @@ namespace MetaVideoEditor
             RenameMovieBox.Checked = MoviePatternBox.Enabled = Config.RenameMovies;
             RenameSeasonBox.Checked = SeasonPatternBox.Enabled = Config.RenameSeasons;
             RenameSeriesBox.Checked = SeriesPatternBox.Enabled = Config.RenameSeries;
+            removeAccentsBox.Checked = Config.RemoveAccents;
             MoviePatternBox.Text = Config.MoviePattern;
             SeriesPatternBox.Text = Config.SeriesPattern;
             SeasonPatternBox.Text = Config.SeasonPattern;
@@ -134,6 +135,8 @@ namespace MetaVideoEditor
             RenameSeriesBox.Text = Kernel.Instance.GetString("RenameSeriesSet");
             RenameSeasonBox.Text = Kernel.Instance.GetString("RenameSeasonSet");
             RenameEpisodeBox.Text = Kernel.Instance.GetString("RenameEpisodeSet");
+            removeAccentsBox.Text = Kernel.Instance.GetString("RemoveAccents");
+            groupBox16.Text = Kernel.Instance.GetString("GeneralSet");
             label1.Text = label4.Text = label5.Text = label8.Text = Kernel.Instance.GetString("PatternSet");
             groupBox8.Text = Kernel.Instance.GetString("ValuesSet");
             label3.Text = string.Format("{0}\r\n\r\n{1}\r\n\r\n{2}\r\n\r\n{3}\r\n\r\n{4}\r\n\r\n{5}\r\n\r\n{6}", 
@@ -222,6 +225,7 @@ namespace MetaVideoEditor
             Config.RenameSeries = RenameSeriesBox.Checked;
             Config.RenameSeasons = RenameSeasonBox.Checked;
             Config.RenameEpisodes = RenameEpisodeBox.Checked;
+            Config.RemoveAccents = removeAccentsBox.Checked;
             Config.MoviePattern = MoviePatternBox.Text;
             Config.SeriesPattern = SeriesPatternBox.Text;
             Config.SeasonPattern = SeasonPatternBox.Text;
