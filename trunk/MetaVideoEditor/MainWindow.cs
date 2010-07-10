@@ -377,10 +377,13 @@ namespace MetaVideoEditor
 
         private void itemsView_AfterCheck(object sender, TreeViewEventArgs e)
         {
-            if (e.Node.Checked)
-                Kernel.Instance.ItemCollection.CheckedItems.Add(Kernel.Instance.ItemCollection.FindById((string)e.Node.Tag));
-            else
-                Kernel.Instance.ItemCollection.CheckedItems.RemoveAll(i => i.Id == ((string)e.Node.Tag));
+            if (e.Node.Tag != null)
+            {
+                if (e.Node.Checked)
+                    Kernel.Instance.ItemCollection.CheckedItems.Add(Kernel.Instance.ItemCollection.FindById((string)e.Node.Tag));
+                else
+                    Kernel.Instance.ItemCollection.CheckedItems.RemoveAll(i => i.Id == ((string)e.Node.Tag));
+            }
             foreach (TreeNode node in e.Node.Nodes)
             {
                 node.Checked = e.Node.Checked;
