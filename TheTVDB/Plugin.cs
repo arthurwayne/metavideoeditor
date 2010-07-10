@@ -411,7 +411,10 @@ namespace TheTVDB
             if (doc == null) return null;
             XmlNode epNode = doc.SelectSingleNode("//Episode[SeasonNumber='" + episode.SeasonNumber + "'][EpisodeNumber='" + episode.EpisodeNumber + "']");
             if (epNode == null)
+            {
+                Logger.ReportWarning("Episode S" + episode.EpisodeNumber + "E" + episode.SeasonNumber + " not found in xml file");
                 return null;
+            }
 
             var f = epNode.SafeGetString("filename");
             if (f != null)

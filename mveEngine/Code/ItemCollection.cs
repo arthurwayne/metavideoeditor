@@ -177,7 +177,7 @@ namespace mveEngine
                 TreeNode tn = FindNodeById(item.Id);
                 if (tn != null)
                 {
-                    if (item.Type != Entity.Season && item.Type != Entity.Episode)
+                    if (item.Type != Entity.Season)
                     {
                         tn.Name = resultItem.Title;
                     }

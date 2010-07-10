@@ -49,7 +49,7 @@ namespace TMDb
 
         public override Version Version
         {
-            get { return new Version(1, 0, 1); }
+            get { return new Version(1, 0, 2); }
         }
 
         public override Version RequiredMVEVersion
@@ -190,7 +190,7 @@ namespace TMDb
 
         public override List<Item> FindPossible(Item item)
         {
-            XmlDocument doc = Helper.Fetch(string.Format(Search, PluginOptions.Instance.Language, APIKey, HtmlUtil.UrlEncode(item.Title)));
+            XmlDocument doc = Helper.Fetch(string.Format(Search, lang, APIKey, HtmlUtil.UrlEncode(item.Title)));
 
             List<Item> filmsList = new List<Item>();
             if (doc == null) return filmsList;
@@ -290,15 +290,12 @@ namespace TMDb
             DataProviderId dp = movie.ProvidersId.Find(p => p.Name == this.Name);
             if (dp == null) return null;
             movie.ProvidersId = new List<DataProviderId> { dp };
-            XmlDocument InfosDoc = Helper.Fetch(string.Format(GetInfo, PluginOptions.Instance.Language, APIKey, dp.Id));
+            XmlDocument InfosDoc = Helper.Fetch(string.Format(GetInfo, lang, APIKey, dp.Id));
             if (InfosDoc == null)
                 return null;
 
             //Titre
             movie.Title = InfosDoc.SafeGetString("//name");
-
-            //Titre original
-            //movie.OriginalTitle = CleanAllocineTitle(InfosDoc.SafeGetString("//originaltitle"));
 
             //Url
             dp.Url = InfosDoc.SafeGetString("//url");
