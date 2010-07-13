@@ -96,6 +96,17 @@ namespace MetaVideoEditor
             tabPanel5.Caption = Kernel.Instance.GetString("SettingsDisplayMW");
             tabPanel7.Caption = Kernel.Instance.GetString("SearchMW");
             tabPanel6.Caption = Kernel.Instance.GetString("MediaCollectionMW");
+            ribbonButton1.InfoTitle = Kernel.Instance.GetString("SettingsTitleMW");
+            ribbonButton1.InfoComment = Kernel.Instance.GetString("SettingsInfoMW");
+            ribbonButton2.InfoTitle = Kernel.Instance.GetString("AboutTitleMW");
+            ribbonButton5.InfoTitle = Kernel.Instance.GetString("SearchTitleMW");
+            ribbonButton5.InfoComment = Kernel.Instance.GetString("SearchInfoMW");
+            ribbonButton6.InfoTitle = Kernel.Instance.GetString("AutoTitleMW");
+            ribbonButton6.InfoComment = Kernel.Instance.GetString("AutoInfoMW");
+            ribbonButton7.InfoTitle = Kernel.Instance.GetString("RestoreTitleMW");
+            ribbonButton7.InfoComment = Kernel.Instance.GetString("RestoreInfoMW");
+            ribbonButton10.InfoTitle = Kernel.Instance.GetString("RebuildTitleMW");
+            ribbonButton10.InfoComment = Kernel.Instance.GetString("RebuildInfoMW");
             Medialabel.Text = Kernel.Instance.GetString("MediaCollectionMW");
             SearchBox.Text = Kernel.Instance.GetString("SearchMW") + "...";
             tabPageOverview.Text = Kernel.Instance.GetString("TitleOvTab");

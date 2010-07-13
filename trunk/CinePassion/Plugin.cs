@@ -49,7 +49,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 2); }
+            get { return new Version(1, 0, 3); }
         }
 
         public override Version RequiredMVEVersion
@@ -246,12 +246,28 @@ namespace CinePassion
         {
             Item movie = new Item();
             movie.ProvidersId = item.ProvidersId;
-            DataProviderId dp = movie.ProvidersId.Find(p => p.Name == this.Name || p.Name == "allocine");
+            DataProviderId dp = movie.ProvidersId.Find(p => p.Name == this.Name || p.Name == "AlloCine");
             if (dp == null) return null;
             movie.ProvidersId = new List<DataProviderId>{dp};
             XmlDocument InfosDoc = Helper.Fetch(string.Format(GetInfo, PluginOptions.Instance.Language, XbmcKey, dp.Id));
             if (InfosDoc == null)
                 return null;
+
+            //Id
+            string allocine = InfosDoc.SafeGetString("//id_allocine");
+            if (!string.IsNullOrEmpty(allocine)) movie.ProvidersId.Add(new DataProviderId
+            {
+                Name = "AlloCine",
+                Id = allocine,
+                Url = "http://www.allocine.fr/film/fichefilm_gen_cfilm=" + allocine + ".html"
+            });
+            string imdb = InfosDoc.SafeGetString("//id_imdb");
+            if (!string.IsNullOrEmpty(imdb)) movie.ProvidersId.Add(new DataProviderId
+            {
+                Name = "Imdb",
+                Id = "tt0" + imdb,
+                Url = "http://www.imdb.com/title/tt0" + imdb
+            });
 
             //Titre
             movie.Title = CleanAllocineTitle(InfosDoc.SafeGetString("//title"));
