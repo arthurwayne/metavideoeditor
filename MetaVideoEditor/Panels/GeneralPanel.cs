@@ -89,6 +89,10 @@ namespace MetaVideoEditor
            episodeBox.OnTextChanged += new EventHandler(OnChanged);
            episodePanel = new GeneralItemPanel(Kernel.Instance.GetString("EpisodeStr"), episodeBox, 24);
 
+           idBox = new IdControl();           
+           idBox.OnTextChanged += new EventHandler(OnChanged);
+           idPanel = new GeneralItemPanel("ID", idBox, 24);
+
            this.CreateGraphics();
         }
 
@@ -148,6 +152,7 @@ namespace MetaVideoEditor
                 SelectedItem.SeasonNumber = seasonBox.text;
                 if (SelectedItem.Type == Entity.Episode) SelectedItem.EpisodeNumber = episodeBox.text;
             }
+            SelectedItem.ProvidersId = idBox.ProviderIds;
             HasChanged();
         }
 
@@ -166,6 +171,7 @@ namespace MetaVideoEditor
         TextBoxControl seriesBox;
         TextBoxControl seasonBox;
         TextBoxControl episodeBox;
+        IdControl idBox;
 
         GeneralItemPanel titlePanel;
         GeneralItemPanel originalTitlePanel;
@@ -182,6 +188,7 @@ namespace MetaVideoEditor
         GeneralItemPanel seriesPanel;
         GeneralItemPanel seasonPanel;
         GeneralItemPanel episodePanel;
+        GeneralItemPanel idPanel;
 
         public override void UpdateData()
         {
@@ -261,6 +268,13 @@ namespace MetaVideoEditor
             }
             AddControl(watchedPanel);
 
+            if (SelectedItem.Type == Entity.Episode || SelectedItem.Type == Entity.Season || SelectedItem.Type == Entity.Series)
+                idBox.choices = new string[] { "TheTVDB" };
+            else
+                idBox.choices = new string[] { "themoviedb", "Imdb", "Ciné-Passion", "AlloCine" };
+            
+            idBox.ProviderIds = SelectedItem.ProvidersId ?? new List<DataProviderId>();
+            AddControl(idPanel);
             
         }
 

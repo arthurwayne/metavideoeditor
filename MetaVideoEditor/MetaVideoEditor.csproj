@@ -89,6 +89,9 @@
     <Compile Include="Controls\ComboBoxControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\IdControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\FolderBrowserDialogEx.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -460,6 +463,7 @@
     <Content Include="Images\help.gif" />
     <Content Include="Images\icon-minus.gif" />
     <Content Include="Images\icon-plus.gif" />
+    <Content Include="Images\link.png" />
     <Content Include="Images\MissingPerson.jpg" />
     <Content Include="Images\mve.png" />
     <Content Include="Images\play.gif" />

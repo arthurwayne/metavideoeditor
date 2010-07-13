@@ -298,7 +298,7 @@ namespace MetaVideoEditor
             this.tabPageGeneral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPageGeneral.Location = new System.Drawing.Point(4, 27);
             this.tabPageGeneral.Name = "tabPageGeneral";
-            this.tabPageGeneral.Size = new System.Drawing.Size(989, 798);
+            this.tabPageGeneral.Size = new System.Drawing.Size(990, 798);
             this.tabPageGeneral.TabIndex = 1;
             this.tabPageGeneral.Text = "General";
             this.tabPageGeneral.UseVisualStyleBackColor = true;
@@ -307,7 +307,7 @@ namespace MetaVideoEditor
             // 
             this.tabPageActors.Location = new System.Drawing.Point(4, 27);
             this.tabPageActors.Name = "tabPageActors";
-            this.tabPageActors.Size = new System.Drawing.Size(989, 798);
+            this.tabPageActors.Size = new System.Drawing.Size(990, 798);
             this.tabPageActors.TabIndex = 2;
             this.tabPageActors.Text = "Acteurs";
             this.tabPageActors.UseVisualStyleBackColor = true;
@@ -317,7 +317,7 @@ namespace MetaVideoEditor
             this.tabPageCrew.Location = new System.Drawing.Point(4, 27);
             this.tabPageCrew.Name = "tabPageCrew";
             this.tabPageCrew.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCrew.Size = new System.Drawing.Size(989, 798);
+            this.tabPageCrew.Size = new System.Drawing.Size(990, 798);
             this.tabPageCrew.TabIndex = 11;
             this.tabPageCrew.Text = "Equipe";
             this.tabPageCrew.UseVisualStyleBackColor = true;
@@ -327,7 +327,7 @@ namespace MetaVideoEditor
             this.tabPageTrailers.Location = new System.Drawing.Point(4, 27);
             this.tabPageTrailers.Name = "tabPageTrailers";
             this.tabPageTrailers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrailers.Size = new System.Drawing.Size(989, 798);
+            this.tabPageTrailers.Size = new System.Drawing.Size(990, 798);
             this.tabPageTrailers.TabIndex = 3;
             this.tabPageTrailers.Text = "Bandes annonces";
             this.tabPageTrailers.UseVisualStyleBackColor = true;
@@ -337,7 +337,7 @@ namespace MetaVideoEditor
             this.tabPagePoster.Location = new System.Drawing.Point(4, 27);
             this.tabPagePoster.Name = "tabPagePoster";
             this.tabPagePoster.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePoster.Size = new System.Drawing.Size(989, 798);
+            this.tabPagePoster.Size = new System.Drawing.Size(990, 798);
             this.tabPagePoster.TabIndex = 4;
             this.tabPagePoster.Text = "Jaquettes";
             this.tabPagePoster.UseVisualStyleBackColor = true;
@@ -347,7 +347,7 @@ namespace MetaVideoEditor
             this.tabPageBackdrop.Location = new System.Drawing.Point(4, 27);
             this.tabPageBackdrop.Name = "tabPageBackdrop";
             this.tabPageBackdrop.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBackdrop.Size = new System.Drawing.Size(989, 798);
+            this.tabPageBackdrop.Size = new System.Drawing.Size(990, 798);
             this.tabPageBackdrop.TabIndex = 5;
             this.tabPageBackdrop.Text = "Backdrops";
             this.tabPageBackdrop.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@ namespace MetaVideoEditor
             this.tabPageBanners.Location = new System.Drawing.Point(4, 27);
             this.tabPageBanners.Name = "tabPageBanners";
             this.tabPageBanners.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBanners.Size = new System.Drawing.Size(989, 798);
+            this.tabPageBanners.Size = new System.Drawing.Size(990, 798);
             this.tabPageBanners.TabIndex = 6;
             this.tabPageBanners.Text = "Bannières";
             this.tabPageBanners.UseVisualStyleBackColor = true;
@@ -367,7 +367,7 @@ namespace MetaVideoEditor
             this.tabPageGenres.Location = new System.Drawing.Point(4, 27);
             this.tabPageGenres.Name = "tabPageGenres";
             this.tabPageGenres.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGenres.Size = new System.Drawing.Size(989, 798);
+            this.tabPageGenres.Size = new System.Drawing.Size(990, 798);
             this.tabPageGenres.TabIndex = 7;
             this.tabPageGenres.Text = "Genres";
             this.tabPageGenres.UseVisualStyleBackColor = true;
@@ -377,7 +377,7 @@ namespace MetaVideoEditor
             this.tabPageStudios.Location = new System.Drawing.Point(4, 27);
             this.tabPageStudios.Name = "tabPageStudios";
             this.tabPageStudios.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageStudios.Size = new System.Drawing.Size(989, 798);
+            this.tabPageStudios.Size = new System.Drawing.Size(990, 798);
             this.tabPageStudios.TabIndex = 8;
             this.tabPageStudios.Text = "Studios";
             this.tabPageStudios.UseVisualStyleBackColor = true;
@@ -387,7 +387,7 @@ namespace MetaVideoEditor
             this.tabPageCountries.Location = new System.Drawing.Point(4, 27);
             this.tabPageCountries.Name = "tabPageCountries";
             this.tabPageCountries.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCountries.Size = new System.Drawing.Size(989, 798);
+            this.tabPageCountries.Size = new System.Drawing.Size(990, 798);
             this.tabPageCountries.TabIndex = 9;
             this.tabPageCountries.Text = "Pays";
             this.tabPageCountries.UseVisualStyleBackColor = true;
@@ -397,7 +397,7 @@ namespace MetaVideoEditor
             this.tabPageTagLines.Location = new System.Drawing.Point(4, 27);
             this.tabPageTagLines.Name = "tabPageTagLines";
             this.tabPageTagLines.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTagLines.Size = new System.Drawing.Size(989, 798);
+            this.tabPageTagLines.Size = new System.Drawing.Size(990, 798);
             this.tabPageTagLines.TabIndex = 10;
             this.tabPageTagLines.Text = "Accroches";
             this.tabPageTagLines.UseVisualStyleBackColor = true;
@@ -484,10 +484,9 @@ namespace MetaVideoEditor
             this.ribbonButton10.img_heigth = 32;
             this.ribbonButton10.img_on = global::MetaVideoEditor.Properties.Resources.B_on1;
             this.ribbonButton10.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(217)))), ((int)(((byte)(239)))));
-            this.ribbonButton10.InfoComment = "Réinitialise les données de la bibliothèques. Attention : toutes les données non " +
-                "enregistrées seront écrasées !";
+            this.ribbonButton10.InfoComment = "";
             this.ribbonButton10.InfoImage = "";
-            this.ribbonButton10.InfoTitle = "Réinitialisation de la bibliothèque";
+            this.ribbonButton10.InfoTitle = "";
             this.ribbonButton10.Location = new System.Drawing.Point(83, 6);
             this.ribbonButton10.MenuItems = null;
             this.ribbonButton10.Name = "ribbonButton10";
@@ -587,9 +586,9 @@ namespace MetaVideoEditor
             this.ribbonButton7.img_heigth = 32;
             this.ribbonButton7.img_on = global::MetaVideoEditor.Properties.Resources.B_on1;
             this.ribbonButton7.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(217)))), ((int)(((byte)(239)))));
-            this.ribbonButton7.InfoComment = "Annuler les modifications apportées sur le ou les éléments sélectionnés";
+            this.ribbonButton7.InfoComment = "";
             this.ribbonButton7.InfoImage = "";
-            this.ribbonButton7.InfoTitle = "Rétablir";
+            this.ribbonButton7.InfoTitle = "";
             this.ribbonButton7.Location = new System.Drawing.Point(135, 6);
             this.ribbonButton7.MenuItems = null;
             this.ribbonButton7.Name = "ribbonButton7";
@@ -652,9 +651,9 @@ namespace MetaVideoEditor
             this.ribbonButton5.img_heigth = 32;
             this.ribbonButton5.img_on = global::MetaVideoEditor.Properties.Resources.B_on1;
             this.ribbonButton5.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(217)))), ((int)(((byte)(239)))));
-            this.ribbonButton5.InfoComment = "Recherchez les informations concernant l\'élément en cours";
+            this.ribbonButton5.InfoComment = "";
             this.ribbonButton5.InfoImage = "";
-            this.ribbonButton5.InfoTitle = "Recherche";
+            this.ribbonButton5.InfoTitle = "";
             this.ribbonButton5.Location = new System.Drawing.Point(6, 6);
             this.ribbonButton5.MenuItems = null;
             this.ribbonButton5.Name = "ribbonButton5";
@@ -703,7 +702,7 @@ namespace MetaVideoEditor
             this.ribbonButton2.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(217)))), ((int)(((byte)(239)))));
             this.ribbonButton2.InfoComment = "";
             this.ribbonButton2.InfoImage = "";
-            this.ribbonButton2.InfoTitle = "A propos de MetaVideoEditor";
+            this.ribbonButton2.InfoTitle = "";
             this.ribbonButton2.Location = new System.Drawing.Point(122, 6);
             this.ribbonButton2.MenuItems = null;
             this.ribbonButton2.Name = "ribbonButton2";
@@ -867,9 +866,9 @@ namespace MetaVideoEditor
             this.ribbonButton1.img_heigth = 32;
             this.ribbonButton1.img_on = global::MetaVideoEditor.Properties.Resources.B_on1;
             this.ribbonButton1.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(217)))), ((int)(((byte)(239)))));
-            this.ribbonButton1.InfoComment = "Modifiez ici les paramètres généraux de MetaVideoEditor";
+            this.ribbonButton1.InfoComment = "";
             this.ribbonButton1.InfoImage = "";
-            this.ribbonButton1.InfoTitle = "Options";
+            this.ribbonButton1.InfoTitle = "";
             this.ribbonButton1.Location = new System.Drawing.Point(8, 6);
             this.ribbonButton1.MenuItems = null;
             this.ribbonButton1.Name = "ribbonButton1";

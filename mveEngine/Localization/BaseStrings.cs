@@ -12,7 +12,7 @@ namespace mveEngine
     [Serializable]
     public class BaseStrings
     {
-        const string VERSION = "1.0003";
+        const string VERSION = "1.0004";
         const string ENFILE = "strings-en.xml";
 
         public string Version = VERSION; //this is used to see if we have changed and need to re-save
@@ -33,6 +33,17 @@ namespace mveEngine
         public string RebuildMW = "Rebuild";
         public string SettingsDisplayMW = "Settings & Display";
         public string MediaCollectionMW = "Media Collection";
+        public string SettingsTitleMW = "Settings";
+        public string SettingsInfoMW = "General settings of MetaVideoEditor";
+        public string AboutTitleMW = "About MetaVideoEditor";
+        public string SearchTitleMW = "Search";
+        public string SearchInfoMW = "Search metadata for the current item";
+        public string AutoTitleMW = "Automatic search";
+        public string AutoInfoMW = "Let MetaVideoEditor find metadata for selected items";
+        public string RestoreTitleMW = "Restore";
+        public string RestoreInfoMW = "Cancel modifications on selected items";
+        public string RebuildTitleMW = "Rebuild media collection";
+        public string RebuildInfoMW = "Complete rebuild of media collection. Warning: any non seved data will be erased!";
         public string AvailableUpdateMW = "{0} update available";
         public string AvailableUpdatesMW = "{0} updates available";
         public string NoActionMW = "No action in progress";

@@ -208,4 +208,15 @@
   <ResetStr>Réinitialiser</ResetStr>
   <SelectFolderSet>Veuillez choisir un dossier</SelectFolderSet>
   <RemoveAccents>Supprimer les accents</RemoveAccents>
+  <SettingsTitleMW>Options</SettingsTitleMW>
+  <SettingsInfoMW>Modifiez ici les paramètres généraux de MetaVideoEditor</SettingsInfoMW>
+  <AboutTitleMW>A propos de MetaVideoEditor</AboutTitleMW>
+  <SearchTitleMW>Rechercher</SearchTitleMW>
+  <SearchInfoMW>Recherchez les informations concernant l'élément en cours</SearchInfoMW>
+  <AutoTitleMW>Recherche automatique</AutoTitleMW>
+  <AutoInfoMW>Laissez MetaVideoEditor chercher les informations concernant le ou les éléments sélectionnés</AutoInfoMW>
+  <RestoreTitleMW>Rétablir</RestoreTitleMW>
+  <RestoreInfoMW>Annuler les modifications apportées sur le ou les éléments sélectionnés</RestoreInfoMW>
+  <RebuildTitleMW>Réinitialisation de la bibliothèque</RebuildTitleMW>
+  <RebuildInfoMW>Réinitialise les données de la bibliothèques. Attention : toutes les données non enregistrées seront écrasées !</RebuildInfoMW>
 </Settings>
