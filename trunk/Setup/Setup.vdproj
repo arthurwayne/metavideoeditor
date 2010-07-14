@@ -4,9 +4,9 @@
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
 "ProjectName" = "8:Setup"
-"LanguageId" = "3:1036"
+"LanguageId" = "3:0"
 "CodePage" = "3:1252"
-"UILanguageId" = "3:1036"
+"UILanguageId" = "3:0"
 "SccProjectName" = "8:"
 "SccLocalPath" = "8:"
 "SccAuxPath" = "8:"
@@ -15,14 +15,26 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_A06A874B3E1C92658A33DBABA23A1F73"
-        "OwnerKey" = "8:_C59A891B133AD4410B8FB6BB13140554"
+        "MsmKey" = "8:_0D81D7547BC33AD546684CF86AF53B92"
+        "OwnerKey" = "8:_77D19824AE1C4E83B0B524EC89CBDF23"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A06A874B3E1C92658A33DBABA23A1F73"
-        "OwnerKey" = "8:_C080F76E80554DD9A7E46A93495FD1F9"
+        "MsmKey" = "8:_77D19824AE1C4E83B0B524EC89CBDF23"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_828E87D93097C1FE376B9000E0D93FD9"
+        "OwnerKey" = "8:_0D81D7547BC33AD546684CF86AF53B92"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_828E87D93097C1FE376B9000E0D93FD9"
+        "OwnerKey" = "8:_77D19824AE1C4E83B0B524EC89CBDF23"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -33,14 +45,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C080F76E80554DD9A7E46A93495FD1F9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C59A891B133AD4410B8FB6BB13140554"
-        "OwnerKey" = "8:_C080F76E80554DD9A7E46A93495FD1F9"
+        "MsmKey" = "8:_A63C977E64AE97A8BC2B2D8C9A69900D"
+        "OwnerKey" = "8:_77D19824AE1C4E83B0B524EC89CBDF23"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -51,32 +57,26 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_D6DCAFD34A75A1EE1A0C5527FB5DF0F4"
-        "OwnerKey" = "8:_C080F76E80554DD9A7E46A93495FD1F9"
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_828E87D93097C1FE376B9000E0D93FD9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C080F76E80554DD9A7E46A93495FD1F9"
+        "OwnerKey" = "8:_77D19824AE1C4E83B0B524EC89CBDF23"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D6DCAFD34A75A1EE1A0C5527FB5DF0F4"
+        "OwnerKey" = "8:_A63C977E64AE97A8BC2B2D8C9A69900D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C59A891B133AD4410B8FB6BB13140554"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A06A874B3E1C92658A33DBABA23A1F73"
+        "OwnerKey" = "8:_0D81D7547BC33AD546684CF86AF53B92"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -184,14 +184,45 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A06A874B3E1C92658A33DBABA23A1F73"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0D81D7547BC33AD546684CF86AF53B92"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_0D81D7547BC33AD546684CF86AF53B92"
+                    {
+                    "Name" = "8:AxInterop.WMPLib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:AxInterop.WMPLib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7F895DA644C54531ADB9B9AAEEB6FB24"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_828E87D93097C1FE376B9000E0D93FD9"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A06A874B3E1C92658A33DBABA23A1F73"
+                    "_828E87D93097C1FE376B9000E0D93FD9"
                     {
                     "Name" = "8:Interop.WMPLib.dll"
                     "Attributes" = "3:512"
@@ -235,20 +266,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C59A891B133AD4410B8FB6BB13140554"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A63C977E64AE97A8BC2B2D8C9A69900D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:mveEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C59A891B133AD4410B8FB6BB13140554"
+                    "_A63C977E64AE97A8BC2B2D8C9A69900D"
                     {
-                    "Name" = "8:AxInterop.WMPLib.dll"
+                    "Name" = "8:mveEngine.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:AxInterop.WMPLib.dll"
+            "SourcePath" = "8:mveEngine.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7F895DA644C54531ADB9B9AAEEB6FB24"
@@ -284,37 +315,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D6DCAFD34A75A1EE1A0C5527FB5DF0F4"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:mveEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_D6DCAFD34A75A1EE1A0C5527FB5DF0F4"
-                    {
-                    "Name" = "8:mveEngine.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:mveEngine.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_7F895DA644C54531ADB9B9AAEEB6FB24"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -388,21 +388,21 @@
         }
         "MsiBootstrapper"
         {
-        "LangId" = "3:1036"
+        "LangId" = "3:0"
         "RequiresElevation" = "11:FALSE"
         }
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MetaVideoEditor"
-        "ProductCode" = "8:{2D14DD4F-F9D1-4E96-9B18-2BF0DA427F4B}"
-        "PackageCode" = "8:{998881FB-F960-4B8C-8185-1D1C5FB0B351}"
+        "ProductCode" = "8:{5D00E9F9-8F58-490F-B513-40CB5079D84F}"
+        "PackageCode" = "8:{3AB24718-35EC-428D-9B53-7B8E8CD7FF14}"
         "UpgradeCode" = "8:{751907B4-777B-4BD1-84BC-9F17A15984FF}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:2.0.00"
+        "ProductVersion" = "8:2.0.11"
         "Manufacturer" = "8:MetaVideoEditor"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -523,7 +523,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_C080F76E80554DD9A7E46A93495FD1F9"
+            "Target" = "8:_77D19824AE1C4E83B0B524EC89CBDF23"
             "Folder" = "8:_D4C5DF4723CE4EEBA1347ADD65ABA5DA"
             "WorkingFolder" = "8:_7F895DA644C54531ADB9B9AAEEB6FB24"
             "Icon" = "8:_D602943114EB489DAAA2C8BCE5DB3833"
@@ -928,7 +928,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C080F76E80554DD9A7E46A93495FD1F9"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_77D19824AE1C4E83B0B524EC89CBDF23"
             {
             "SourcePath" = "8:..\\MetaVideoEditor\\obj\\Release\\MetaVideoEditor.exe"
             "TargetName" = "8:"
