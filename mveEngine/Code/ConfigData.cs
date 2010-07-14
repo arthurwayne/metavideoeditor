@@ -30,6 +30,7 @@ namespace mveEngine
         public bool RenameSeries = false;
         public bool RenameSeasons = false;
         public bool RenameEpisodes = false;
+        public bool RemoveAccents = false;
         public string MoviePattern = "%t (%y)";
         public string SeriesPattern = "%t";
         public string EpisodePattern = "%sn - S%sE%e - %t";
@@ -37,8 +38,7 @@ namespace mveEngine
         public string WindowGeometry = "";
         public string ColorTheme = "Azur";
         public bool UseTreeColor = true;
-        public string TrailerPath = Path.Combine(ApplicationPaths.AppConfigPath, "Trailers");
-        public bool RemoveAccents = false;
+        public string TrailerPath = Path.Combine(ApplicationPaths.AppConfigPath, "Trailers");        
 
         // for the serializer
         public ConfigData()
