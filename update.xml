@@ -6,7 +6,7 @@
     <Filename>MetaVideoEditor_2.0.1.1.msi</Filename>
   </Application>
   <Plugin>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>MediaBrowser Reader</Name>
     <Description>Récupère les backdrops et les infos gérées par MediaBrowser</Description>
@@ -70,7 +70,7 @@
     <Type>Local</Type>
   </Plugin>
   <Plugin>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <RequiredMVEVersion>2.0.0</RequiredMVEVersion>
     <Name>MediaBrowser Saver</Name>
     <Description>Enregistre les backdrops et les infos gérées par MediaBrowser</Description>

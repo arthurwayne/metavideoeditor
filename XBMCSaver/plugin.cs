@@ -361,7 +361,7 @@ namespace XBMCSaver
 
             if (series.ProvidersId != null)
             {
-                DataProviderId dp = series.ProvidersId.Find(p => p.Name == "thetvdb");
+                DataProviderId dp = series.ProvidersId.Find(p => p.Name.ToLower() == "thetvdb");
                 if (dp != null)
                 {
                     XmlElement id = doc.CreateElement("id");

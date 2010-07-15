@@ -45,7 +45,7 @@ namespace MediaBrowserProvider
 
         public override Version Version
         {
-            get { return new Version(1, 0, 1); }
+            get { return new Version(1, 0, 2); }
         }
 
         public override Version RequiredMVEVersion
@@ -249,6 +249,19 @@ namespace MediaBrowserProvider
                         // fall through i dont care, one less actor
                     }
                 }
+
+                foreach (XmlNode node in doc.SelectNodes("Title/providerId"))
+                {
+                    if (movie.ProvidersId == null)
+                        movie.ProvidersId = new List<DataProviderId>();
+                    movie.ProvidersId.Add(new DataProviderId
+                    {
+                        Name = node.Attributes["name"].InnerText,
+                        Id = node.Attributes["id"].InnerText,
+                        Url = node.Attributes["url"].InnerText
+                    });
+                }
+
                 string trailersPath = Path.Combine(location, "Trailers");
                 if (Directory.Exists(trailersPath))
                 {
@@ -313,7 +326,20 @@ namespace MediaBrowserProvider
                     foreach (string n in actors.Split('|'))
                     {
                         if (!string.IsNullOrEmpty(n.Trim()))
-                            series.Actors.Add(new Actor { Name = n });
+                        {
+                            Actor actor = new Actor();
+                            actor.Name = n;
+                            if (Directory.Exists(PluginOptions.Instance.ImagesByName))
+                            {
+                                string ibnPath = PluginOptions.Instance.ImagesByName;
+                                if (!ibnPath.ToLower().Contains("people"))
+                                    ibnPath = Path.Combine(ibnPath, "People");
+                                string actorImage = FindImage("folder", Path.Combine(ibnPath, actor.Name));
+                                if (File.Exists(actorImage))
+                                    actor.ImagePath = actorImage;
+                            }
+                            series.Actors.Add(actor);
+                        }
                     }
                 }
 
@@ -419,7 +445,20 @@ namespace MediaBrowserProvider
                 foreach (string name in unsplit.Split('|'))
                 {
                     if (!string.IsNullOrEmpty(name.Trim()))
-                        actors.Add(new Actor { Name = name.Trim() });
+                    {
+                        Actor actor = new Actor();
+                        actor.Name = name.Trim();
+                        if (Directory.Exists(PluginOptions.Instance.ImagesByName))
+                        {
+                            string ibnPath = PluginOptions.Instance.ImagesByName;
+                            if (!ibnPath.ToLower().Contains("people"))
+                                ibnPath = Path.Combine(ibnPath, "People");
+                            string actorImage = FindImage("folder", Path.Combine(ibnPath, actor.Name));
+                            if (File.Exists(actorImage))
+                                actor.ImagePath = actorImage;
+                        }
+                        actors.Add(actor);
+                    }
                 }
             }
             return actors;
