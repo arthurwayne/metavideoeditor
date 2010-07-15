@@ -45,7 +45,7 @@ namespace MediaBrowserSaver
 
         public override Version Version
         {
-            get { return new Version(1, 0, 1); }
+            get { return new Version(1, 0, 2); }
         }
 
         public override Version RequiredMVEVersion
@@ -282,6 +282,24 @@ namespace MediaBrowserSaver
                 root.AppendChild(tags);
             }
 
+            if (movie.ProvidersId != null)
+            {                
+                foreach (DataProviderId dpi in movie.ProvidersId)
+                {
+                    XmlElement tags = doc.CreateElement("providerId");
+                    XmlAttribute name = doc.CreateAttribute("name");
+                    XmlAttribute id = doc.CreateAttribute("id");
+                    XmlAttribute url = doc.CreateAttribute("url");
+                    name.Value = dpi.Name;
+                    id.Value = dpi.Id ?? "";
+                    url.Value = dpi.Url ?? "";
+                    tags.SetAttributeNode(name);
+                    tags.SetAttributeNode(id);
+                    tags.SetAttributeNode(url);
+                    root.AppendChild(tags);
+                }
+            }
+
             try
             {
                 doc.Save(filename);
@@ -342,7 +360,7 @@ namespace MediaBrowserSaver
 
             if (series.ProvidersId != null)
             {
-                DataProviderId dp = series.ProvidersId.Find(p => p.Name == "thetvdb");
+                DataProviderId dp = series.ProvidersId.Find(p => p.Name.ToLower() == "thetvdb");
                 if (dp != null)
                 {
                     XmlElement id = doc.CreateElement("id");
