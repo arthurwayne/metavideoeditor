@@ -49,7 +49,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 3); }
+            get { return new Version(1, 0, 5); }
         }
 
         public override Version RequiredMVEVersion
@@ -89,8 +89,8 @@ namespace CinePassion
         }
 
         private static readonly string XbmcKey = "2952351097998ac1240cb2ab7333a3d2";
-        private static string Search = @"http://passion-xbmc.org/scraper/API/1/Movie.Search/Title/fr/XML/{0}/{1}";
-        private static string GetInfo = @"http://passion-xbmc.org/scraper/API/1/Movie.GetInfo/ID/{0}/XML/{1}/{2}";
+        private static string Search = @"http://passion-xbmc.org/scraper/API/1/Movie.Search/{0}/{1}/Title/fr/XML/{2}/{3}";
+        private static string GetInfo = @"http://passion-xbmc.org/scraper/API/1/Movie.GetInfo/{0}/{1}/ID/{2}/XML/{3}/{4}";
 
         
         public override Item AutoFind(Item item)
@@ -145,7 +145,7 @@ namespace CinePassion
 
         public override List<Item> FindPossible(Item item)
         {
-            XmlDocument doc = Helper.Fetch(string.Format(Search, XbmcKey, HttpUtility.UrlEncode(item.Title)));
+            XmlDocument doc = Helper.Fetch(string.Format(Search, PluginOptions.Instance.username, PluginOptions.Instance.password, XbmcKey, HttpUtility.UrlEncode(item.Title)));
 
             List<Item> filmsList = new List<Item>();
             if (doc == null) return filmsList;
@@ -249,7 +249,7 @@ namespace CinePassion
             DataProviderId dp = movie.ProvidersId.Find(p => p.Name == this.Name || p.Name == "AlloCine");
             if (dp == null) return null;
             movie.ProvidersId = new List<DataProviderId>{dp};
-            XmlDocument InfosDoc = Helper.Fetch(string.Format(GetInfo, PluginOptions.Instance.Language, XbmcKey, dp.Id));
+            XmlDocument InfosDoc = Helper.Fetch(string.Format(GetInfo, PluginOptions.Instance.username, PluginOptions.Instance.password, PluginOptions.Instance.Language, XbmcKey, dp.Id));
             if (InfosDoc == null)
                 return null;
 
