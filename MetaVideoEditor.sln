@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaVideoEditor", "MetaVideoEditor\MetaVideoEditor.csproj", "{17F6DC8F-2713-4717-9B8D-37321B1FEBE2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2A953DE9-16BE-40B0-8B4B-0433089F50C9} = {2A953DE9-16BE-40B0-8B4B-0433089F50C9}
