@@ -43,7 +43,7 @@ namespace MtnFrameGrabProvider
 
         public override Version Version
         {
-            get { return new Version(1, 0, 1); }
+            get { return new Version(1, 0, 2); }
         }
 
         public override Version RequiredMVEVersion
@@ -96,7 +96,7 @@ namespace MtnFrameGrabProvider
                 else return null;
                 Item i = new Item();
                 string localFile = Path.Combine(ApplicationPaths.AppImagePath, Helper.GetMD5(videoLocation + "mtn") + ".jpg");
-                if (File.Exists(localFile) || ThumbCreator.CreateThumb(videoLocation, localFile, 600))
+                if (File.Exists(localFile) || ThumbCreator.CreateThumb(videoLocation, localFile, PluginOptions.Instance.MtnCaptureTime))
                 {
                     if (i.ImagesPaths == null) i.ImagesPaths = new List<Poster>();
                     i.ImagesPaths.AddDistinctPoster(new Poster { Image = localFile });
