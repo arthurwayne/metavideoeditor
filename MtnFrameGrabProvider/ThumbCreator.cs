@@ -30,7 +30,7 @@ namespace MtnFrameGrabProvider
             );
 
 
-        public static bool CreateThumb(string video, string destination, int secondsFromStart)
+        public static bool CreateThumb(string video, string destination, string secondsFromStart)
         {
             EnsureMtnIsExtracted();
             if (File.Exists(destination))

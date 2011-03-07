@@ -17,5 +17,8 @@ namespace MtnFrameGrabProvider
 
         [Label("en&Only extract if no poster:|fr&Extraire uniquement si aucune jaquette")]
         public bool OnlyExtractMissing = true;
+
+        [Label("en&Capture Time (seconds):|fr&Moment de la capture (secondes)")]
+        public string MtnCaptureTime = "600";
     }
 }
