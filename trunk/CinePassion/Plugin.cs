@@ -49,7 +49,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 5); }
+            get { return new Version(1, 0, 6); }
         }
 
         public override Version RequiredMVEVersion
@@ -91,7 +91,22 @@ namespace CinePassion
         private static readonly string XbmcKey = "2952351097998ac1240cb2ab7333a3d2";
         private static string Search = @"http://passion-xbmc.org/scraper/API/1/Movie.Search/{0}/{1}/Title/fr/XML/{2}/{3}";
         private static string GetInfo = @"http://passion-xbmc.org/scraper/API/1/Movie.GetInfo/{0}/{1}/ID/{2}/XML/{3}/{4}";
+        private static string GetQuota = @"http://passion-xbmc.org/scraper/API/1/User.GetQuota/{0}/{1}/fr/XML/{2}";
 
+        public static string Quota
+        {
+            get
+            {
+
+                XmlDocument fetchquota = Helper.Fetch(string.Format(GetQuota, PluginOptions.Instance.username, PluginOptions.Instance.password, XbmcKey));
+                if (fetchquota == null) return null;
+                XmlNode QuotaNode = fetchquota.SelectSingleNode("//userquota/quota");
+
+                string QuotaAvailable = QuotaNode.Attributes["authorize"].InnerText;
+                return " - Quota Restant :" + QuotaAvailable;
+
+            }
+        }
         
         public override Item AutoFind(Item item)
         {
@@ -156,8 +171,8 @@ namespace CinePassion
                 string id = node.SafeGetString("id");
                 if (!string.IsNullOrEmpty(id))
                 {
-                    f.ProvidersId.Add(new DataProviderId { 
-                        Name = this.Name, 
+                    f.ProvidersId.Add(new DataProviderId {
+                        Name = this.Name + Quota, 
                         Id = id, 
                         Url = "http://passion-xbmc.org/scraper/index2.php?Page=ViewMovie&ID=" + id });
                 }
