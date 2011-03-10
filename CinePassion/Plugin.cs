@@ -49,7 +49,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 6); }
+            get { return new Version(1, 0, 7); }
         }
 
         public override Version RequiredMVEVersion
@@ -119,7 +119,7 @@ namespace CinePassion
             Item f = new Item();
             f = AttemptFindId(item.Title, item.Year.ToString());
 
-            if (f.ProvidersId == null || (f.ProvidersId.Count > 0 && item.Title.ToLower() != Helper.GetComparableName(item.Title)))
+            if (f.ProvidersId == null)
                 f = AttemptFindId(Helper.GetComparableName(item.Title), item.Year.ToString());
 
             if (f.ProvidersId == null || f.ProvidersId.Count == 0)  return null;
