@@ -49,7 +49,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 7); }
+            get { return new Version(1, 0, 8); }
         }
 
         public override Version RequiredMVEVersion
@@ -91,7 +91,7 @@ namespace CinePassion
         private static readonly string XbmcKey = "2952351097998ac1240cb2ab7333a3d2";
         private static string Search = @"http://passion-xbmc.org/scraper/API/1/Movie.Search/{0}/{1}/Title/fr/XML/{2}/{3}";
         private static string GetInfo = @"http://passion-xbmc.org/scraper/API/1/Movie.GetInfo/{0}/{1}/ID/{2}/XML/{3}/{4}";
-        private static string GetQuota = @"http://passion-xbmc.org/scraper/API/1/User.GetQuota/{0}/{1}/fr/XML/{2}";
+        /*private static string GetQuota = @"http://passion-xbmc.org/scraper/API/1/User.GetQuota/{0}/{1}/fr/XML/{2}";
 
         public static string Quota
         {
@@ -106,7 +106,7 @@ namespace CinePassion
                 return " - Quota Restant :" + QuotaAvailable;
 
             }
-        }
+        }*/
         
         public override Item AutoFind(Item item)
         {
@@ -164,6 +164,15 @@ namespace CinePassion
 
             List<Item> filmsList = new List<Item>();
             if (doc == null) return filmsList;
+            string Quota = "";
+            try
+            {
+                XmlNode qNode = doc.SelectSingleNode("//results/quota");
+                int qUse = Int32.Parse(qNode.Attributes["use"].InnerText);
+                int qAuth = Int32.Parse(qNode.Attributes["authorize"].InnerText);
+                Quota = " - Quota Restant :" + (qAuth - qUse).ToString();
+            }
+            catch { }
             foreach (XmlNode node in doc.SelectNodes("//results/movie"))
             {
                 Item f = new Item();
