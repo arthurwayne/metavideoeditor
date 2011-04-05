@@ -49,7 +49,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 8); }
+            get { return new Version(1, 0, 9); }
         }
 
         public override Version RequiredMVEVersion
@@ -184,13 +184,10 @@ namespace CinePassion
                         Name = this.Name + Quota, 
                         Id = id, 
                         Url = "http://passion-xbmc.org/scraper/index2.php?Page=ViewMovie&ID=" + id });
+                
+                    f.ProvidersId.Add(new DataProviderId { Name = "AlloCine", Id = id });
                 }
-                string allocine_id = node.SafeGetString("id_allocine");
-                if (!string.IsNullOrEmpty(allocine_id))
-                {
-                    f.ProvidersId.Add(new DataProviderId { Name = "AlloCine", Id = allocine_id });
-                }
-                string imdb_id = node.SafeGetString("id_imdb");
+                string imdb_id = node.SafeGetString("imdb");
                 if (!string.IsNullOrEmpty(imdb_id))
                 {
                     f.ProvidersId.Add(new DataProviderId { Name = "Imdb", Id = imdb_id });
