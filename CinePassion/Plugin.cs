@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Web;
+using System.Security.Cryptography;
 using System.Globalization;
 using mveEngine;
 
@@ -49,7 +50,7 @@ namespace CinePassion
 
         public override Version Version
         {
-            get { return new Version(1, 0, 9); }
+            get { return new Version(1, 1, 0); }
         }
 
         public override Version RequiredMVEVersion
@@ -91,22 +92,28 @@ namespace CinePassion
         private static readonly string XbmcKey = "2952351097998ac1240cb2ab7333a3d2";
         private static string Search = @"http://passion-xbmc.org/scraper/API/1/Movie.Search/{0}/{1}/Title/fr/XML/{2}/{3}";
         private static string GetInfo = @"http://passion-xbmc.org/scraper/API/1/Movie.GetInfo/{0}/{1}/ID/{2}/XML/{3}/{4}";
-        /*private static string GetQuota = @"http://passion-xbmc.org/scraper/API/1/User.GetQuota/{0}/{1}/fr/XML/{2}";
 
-        public static string Quota
+
+        private static string CalculateSHA1(string text, Encoding enc)
         {
-            get
-            {
+            byte[] buffer = enc.GetBytes(text);
+            SHA1CryptoServiceProvider cryptoTransformSHA1 =
+            new SHA1CryptoServiceProvider();
+            string hash = BitConverter.ToString(
+                cryptoTransformSHA1.ComputeHash(buffer)).Replace("-", "");
 
-                XmlDocument fetchquota = Helper.Fetch(string.Format(GetQuota, PluginOptions.Instance.username, PluginOptions.Instance.password, XbmcKey));
-                if (fetchquota == null) return null;
-                XmlNode QuotaNode = fetchquota.SelectSingleNode("//userquota/quota");
+            return hash;
+        }
 
-                string QuotaAvailable = QuotaNode.Attributes["authorize"].InnerText;
-                return " - Quota Restant :" + QuotaAvailable;
+        private static string UsernameEnc()
+        {
+            return System.Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(PluginOptions.Instance.username));
+        }
 
-            }
-        }*/
+        private static string PasswordEnc()
+        {
+            return CalculateSHA1(PluginOptions.Instance.username.ToLower() + PluginOptions.Instance.password, Encoding.Default).ToLower();
+        }
         
         public override Item AutoFind(Item item)
         {
@@ -160,7 +167,7 @@ namespace CinePassion
 
         public override List<Item> FindPossible(Item item)
         {
-            XmlDocument doc = Helper.Fetch(string.Format(Search, PluginOptions.Instance.username, PluginOptions.Instance.password, XbmcKey, HttpUtility.UrlEncode(item.Title)));
+            XmlDocument doc = Helper.Fetch(string.Format(Search, UsernameEnc(), PasswordEnc(), XbmcKey, HttpUtility.UrlEncode(item.Title)));
 
             List<Item> filmsList = new List<Item>();
             if (doc == null) return filmsList;
@@ -270,7 +277,7 @@ namespace CinePassion
             DataProviderId dp = movie.ProvidersId.Find(p => p.Name == this.Name || p.Name == "AlloCine");
             if (dp == null) return null;
             movie.ProvidersId = new List<DataProviderId>{dp};
-            XmlDocument InfosDoc = Helper.Fetch(string.Format(GetInfo, PluginOptions.Instance.username, PluginOptions.Instance.password, PluginOptions.Instance.Language, XbmcKey, dp.Id));
+            XmlDocument InfosDoc = Helper.Fetch(string.Format(GetInfo, UsernameEnc(), PasswordEnc(), PluginOptions.Instance.Language, XbmcKey, dp.Id));
             if (InfosDoc == null)
                 return null;
 
